@@ -1,0 +1,177 @@
+/* Configurações gerais */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f5f1e9;
+}
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    background-color: #315c4c;
+    padding: 15px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* Início */
+
+.inicio {
+    display: flex;
+    background-color: #dfe9df;
+    margin: 20px;
+    height: 220px;
+    position: relative;
+}
+.inicio-texto {
+    width: 60%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.inicio-texto h2 {
+    color: #315c4c;
+}
+
+.inicio-imagem {
+    width: 40%;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Botão */
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #315c4c;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Lugares */
+
+.lugares {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+}
+
+.lugares h2 {
+    color: #315c4c;
+}
+
+.lugares .cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.lugares .card {
+    width: 18%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.lugares .card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+}
+
+.lugares .card h3 {
+    color: #315c4c;
+}
+
+
+/* Pesquisa */
+
+.pesquisa {
+    padding: 30px;
+    margin: 20px;
+    background-color: #dfe9df;
+}
+
+.pesquisa h2 {
+    color: #315c4c;
+}
+
+.pesquisa input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.pesquisa select {
+    padding: 10px;
+    margin: 5px;
+}
+
+.pesquisa button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #315c4c;
+    color: white;
+    border: none;
+}
+
+
+/* Experiências */
+
+.experiencias {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+}
+
+.experiencias h2 {
+    color: #315c4c;
+}
+
+.experiencias .cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.experiencias .card {
+    width: 23%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+
+/* Rodapé */
+
+.rodape {
+    padding: 20px;
+    background-color: #315c4c;
+    color: white;
+    text-align: center;
+}
