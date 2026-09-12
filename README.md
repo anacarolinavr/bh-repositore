@@ -20,8 +20,8 @@ O objetivo é apresentar alguns dos principais lugares da cidade e experiências
 
 ## Versão Desktop
 
-![Print da versão Desktop](desktop.png)
+![Print da versão Desktop](desktop-bootstrap.PNG)
 
 ## Versão Mobile
 
-![Print da versão Mobile](mobile.png)
+![Print da versão Mobile](mobile-bootstrap.PNG)
