@@ -18,6 +18,10 @@ O objetivo é apresentar alguns dos principais lugares da cidade e experiências
 
 ![Wireframe do projeto](wireframe.png)
 
-## Print da Home-page
+## Versão Desktop
 
-![Print da página inicial](print.PNG)
+![Print da versão Desktop](desktop.png)
+
+## Versão Mobile
+
+![Print da versão Mobile](mobile.png)
