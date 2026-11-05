@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -24,8 +25,16 @@ body {
 }
 
 .inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
     padding: 50px;
     background-color: #e7dfd2;
+}
+
+.inicio-texto {
+    width: 45%;
 }
 
 .inicio-texto h2 {
@@ -37,13 +46,8 @@ body {
     font-size: 18px;
 }
 
-.botao {
-    display: inline-block;
-    background-color: #315c4c;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.inicio-imagem {
+    width: 45%;
 }
 
 .inicio-imagem img {
@@ -53,7 +57,17 @@ body {
     border-radius: 10px;
 }
 
-.lugares {
+.botao {
+    display: inline-block;
+    background-color: #315c4c;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.lugares,
+.experiencias {
     padding: 40px;
 }
 
@@ -64,12 +78,18 @@ body {
     color: #315c4c;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .card {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .card img {
@@ -81,6 +101,16 @@ body {
 .card h3,
 .card p {
     padding: 0 15px;
+}
+
+.card a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 15px;
+    background-color: #315c4c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .pesquisa {
@@ -107,10 +137,44 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.experiencias {
+.pagina-detalhes {
     padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #315c4c;
+    text-decoration: none;
+}
+
+.detalhe-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.detalhe-card img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalhe-card h2 {
+    color: #315c4c;
+    font-size: 30px;
+}
+
+.detalhe-card p {
+    line-height: 1.6;
 }
 
 .rodape {
@@ -124,4 +188,85 @@ body {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+
+    .inicio {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .inicio-texto,
+    .inicio-imagem {
+        width: 100%;
+    }
+
+    .inicio-texto h2 {
+        font-size: 30px;
+    }
+
+    .lugares,
+    .experiencias,
+    .pesquisa,
+    .pagina-detalhes {
+        padding: 30px 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .menu a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .pesquisa input,
+    .pesquisa select,
+    .pesquisa button {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 5px 0;
+    }
+
+    .detalhe-card {
+        padding: 15px;
+    }
+}
+
+.chamada-final {
+    padding: 80px 20px;
+    background: linear-gradient(rgba(20, 48, 38, 0.65), rgba(20, 48, 38, 0.65)),
+                url("imagens/pampulha.jpg") center/cover no-repeat;
+    text-align: center;
+    color: #f5f1e9;
+}
+
+.chamada-final h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #f5f1e9;
+}
+
+.chamada-final p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f5f1e9;
+}
+
+@media (max-width: 768px) {
+    .chamada-final {
+        padding: 60px 20px;
+    }
+
+    .chamada-final h2 {
+        font-size: 28px;
+    }
+
+    .chamada-final p {
+        font-size: 16px;
+    }
 }
