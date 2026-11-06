@@ -9,162 +9,184 @@ body {
 
 .cabecalho {
     background-color: #315c4c;
-    padding: 20px;
-    text-align: center;
 }
 
-.cabecalho h1 {
-    margin: 0 0 15px;
-    color: white;
+.cabecalho .navbar {
+    padding: 18px 0;
 }
 
-.menu a {
+.cabecalho .navbar-brand {
     color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cabecalho .nav-link {
+    color: white;
+    margin-left: 15px;
+}
+
+.cabecalho .nav-link:hover {
+    color: #e7dfd2;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }
 
 .inicio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 50px;
+    padding: 65px 0;
     background-color: #e7dfd2;
 }
 
-.inicio-texto {
-    width: 45%;
-}
-
-.inicio-texto h2 {
-    font-size: 40px;
+.inicio-texto h1 {
     color: #315c4c;
+    font-size: 42px;
+    font-weight: bold;
 }
 
 .inicio-texto p {
     font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0;
 }
 
 .inicio-imagem {
-    width: 45%;
-}
-
-.inicio-imagem img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.botao {
-    display: inline-block;
-    background-color: #315c4c;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.lugares {
-    padding: 40px;
-}
-
-.lugares h2,
-.pesquisa h2 {
-    text-align: center;
-    color: #315c4c;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding-bottom: 15px;
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card h3,
-.card p {
-    padding: 0 15px;
-}
-
-.card a {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 10px 15px;
-    background-color: #315c4c;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.pesquisa {
-    padding: 40px;
-    background-color: #e7dfd2;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.pesquisa form {
-    margin-top: 20px;
-}
-
-.pesquisa input,
-.pesquisa select {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-.pesquisa button {
-    padding: 10px 20px;
+.btn-verde {
     background-color: #315c4c;
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 11px 20px;
 }
 
-.chamada-final {
-    padding: 80px 20px;
-    background: linear-gradient(rgba(20, 48, 38, 0.65), rgba(20, 48, 38, 0.65)),
-                url("imagens/pampulha.jpg") center/cover no-repeat;
+.btn-verde:hover {
+    background-color: #244738;
+    color: white;
+}
+
+.destaques {
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+
+.destaques h2,
+.lugares h2,
+.pesquisa h2,
+.sobre h2 {
+    color: #315c4c;
     text-align: center;
-    color: #f5f1e9;
+    margin-bottom: 25px;
 }
 
-.chamada-final h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-    color: #f5f1e9;
+.carousel-item {
+    position: relative;
 }
 
-.chamada-final p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #f5f1e9;
+.imagem-carrossel {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(20, 40, 32, 0.75);
+    border-radius: 8px;
+    padding: 20px;
+    bottom: 25px;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    color: white;
+}
+
+.lugares {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.lugares .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s;
+}
+
+.lugares .card:hover {
+    transform: translateY(-4px);
+}
+
+.lugares .card-img-top {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.lugares .card-body {
+    padding: 20px;
+}
+
+.lugares .card-title {
+    color: #315c4c;
+    font-weight: bold;
+}
+
+.lugares .card-text {
+    line-height: 1.5;
+}
+
+.lugares .btn {
+    margin-top: 10px;
+}
+
+.pesquisa {
+    background-color: #e7dfd2;
+    padding: 55px 0;
+}
+
+.pesquisa p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pesquisa .form-control,
+.pesquisa .form-select {
+    padding: 11px;
+}
+
+.sobre {
+    padding: 65px 0;
+    background-color: #f5f1e9;
+}
+
+.sobre p {
+    max-width: 850px;
+    margin: 15px auto;
+    line-height: 1.8;
+    text-align: center;
 }
 
 .pagina-detalhes {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 60px;
 }
 
 .voltar {
@@ -172,101 +194,144 @@ body {
     margin-bottom: 25px;
     color: #315c4c;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    text-decoration: underline;
 }
 
 .detalhe-card {
     background-color: white;
-    padding: 25px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
-.detalhe-card img {
+.imagem-principal-detalhe {
     display: block;
     width: 100%;
-    max-height: 400px;
+    max-height: 430px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.detalhe-card h1 {
+    color: #315c4c;
+    margin-bottom: 20px;
 }
 
 .detalhe-card h2 {
     color: #315c4c;
-    font-size: 30px;
+    margin-top: 30px;
 }
 
 .detalhe-card p {
-    line-height: 1.6;
+    line-height: 1.8;
+}
+
+.informacoes-lugar {
+    background-color: #f5f1e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.informacoes-lugar p {
+    margin-bottom: 12px;
+}
+
+.galeria {
+    padding-top: 45px;
+}
+
+.galeria h2 {
+    color: #315c4c;
+    margin-bottom: 25px;
+}
+
+.galeria .card {
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagem-galeria {
+    height: 230px;
+    object-fit: cover;
 }
 
 .rodape {
     background-color: #315c4c;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+}
+
+.rodape p {
+    margin: 5px;
 }
 
 .rodape a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
 }
 
 @media (max-width: 768px) {
 
     .inicio {
-        flex-direction: column;
-        padding: 30px 20px;
+        padding: 35px 0;
     }
 
-    .inicio-texto,
-    .inicio-imagem {
-        width: 100%;
-    }
-
-    .inicio-texto h2 {
+    .inicio-texto h1 {
         font-size: 30px;
     }
 
-    .lugares,
-    .pesquisa,
-    .pagina-detalhes {
-        padding: 30px 20px;
+    .inicio-imagem {
+        height: 250px;
     }
 
-    .pesquisa {
-        margin-bottom: 50px;
+    .imagem-carrossel {
+        height: 300px;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
+    .carousel-caption {
+        bottom: 10px;
+        padding: 10px;
     }
 
-    .menu a {
-        display: block;
-        margin: 8px 0;
+    .carousel-caption h3 {
+        font-size: 19px;
     }
 
-    .pesquisa input,
-    .pesquisa select,
-    .pesquisa button {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 5px 0;
+    .carousel-caption p {
+        font-size: 13px;
     }
 
-    .chamada-final {
-        padding: 60px 20px;
-    }
-
-    .chamada-final h2 {
-        font-size: 28px;
-    }
-
-    .chamada-final p {
-        font-size: 16px;
+    .destaques,
+    .lugares {
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 
     .detalhe-card {
-        padding: 15px;
+        padding: 18px;
+    }
+
+    .detalhe-card h1 {
+        font-size: 27px;
+    }
+
+    .imagem-principal-detalhe {
+        height: 250px;
+    }
+
+    .imagem-galeria {
+        height: 200px;
+    }
+
+    .sobre {
+        padding: 40px 0;
     }
 }
