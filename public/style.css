@@ -66,13 +66,11 @@ body {
     border-radius: 5px;
 }
 
-.lugares,
-.experiencias {
+.lugares {
     padding: 40px;
 }
 
 .lugares h2,
-.experiencias h2,
 .pesquisa h2 {
     text-align: center;
     color: #315c4c;
@@ -117,6 +115,7 @@ body {
     padding: 40px;
     background-color: #e7dfd2;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .pesquisa form {
@@ -138,6 +137,28 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.chamada-final {
+    padding: 80px 20px;
+    background: linear-gradient(rgba(20, 48, 38, 0.65), rgba(20, 48, 38, 0.65)),
+                url("imagens/pampulha.jpg") center/cover no-repeat;
+    text-align: center;
+    color: #f5f1e9;
+}
+
+.chamada-final h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #f5f1e9;
+}
+
+.chamada-final p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f5f1e9;
 }
 
 .pagina-detalhes {
@@ -207,10 +228,13 @@ body {
     }
 
     .lugares,
-    .experiencias,
     .pesquisa,
     .pagina-detalhes {
         padding: 30px 20px;
+    }
+
+    .pesquisa {
+        margin-bottom: 50px;
     }
 
     .cards {
@@ -230,34 +254,6 @@ body {
         margin: 5px 0;
     }
 
-    .detalhe-card {
-        padding: 15px;
-    }
-}
-
-.chamada-final {
-    padding: 80px 20px;
-    background: linear-gradient(rgba(20, 48, 38, 0.65), rgba(20, 48, 38, 0.65)),
-                url("imagens/pampulha.jpg") center/cover no-repeat;
-    text-align: center;
-    color: #f5f1e9;
-}
-
-.chamada-final h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-    color: #f5f1e9;
-}
-
-.chamada-final p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #f5f1e9;
-}
-
-@media (max-width: 768px) {
     .chamada-final {
         padding: 60px 20px;
     }
@@ -268,5 +264,9 @@ body {
 
     .chamada-final p {
         font-size: 16px;
+    }
+
+    .detalhe-card {
+        padding: 15px;
     }
 }
